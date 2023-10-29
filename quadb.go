@@ -1,8 +1,6 @@
 package piscine
 
 import (
-	"fmt"
-
 	"github.com/01-edu/z01"
 )
 
@@ -14,6 +12,7 @@ func QuadB(x, y int) {
 			z01.PrintRune('*')
 		}
 		if x > 1 {
+			// z01.PrintRune('\n')
 			z01.PrintRune('\\')
 			z01.PrintRune('\n')
 		} else {
@@ -22,7 +21,7 @@ func QuadB(x, y int) {
 
 		// Print sides
 		for i := 0; i < y-2; i++ {
-			fmt.Print("*")
+			z01.PrintRune('*')
 			for j := 0; j < x-2; j++ {
 				z01.PrintRune(' ')
 			}
@@ -35,8 +34,9 @@ func QuadB(x, y int) {
 
 		// Print bottom side
 		if y > 1 {
-			z01.PrintRune('\\')
 			z01.PrintRune('\n')
+			z01.PrintRune('\\')
+			// z01.PrintRune('\n')
 			for i := 0; i < x-2; i++ {
 				z01.PrintRune('*')
 			}

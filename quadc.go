@@ -1,8 +1,6 @@
 package piscine
 
 import (
-	"fmt"
-
 	"github.com/01-edu/z01"
 )
 
@@ -37,7 +35,7 @@ func QuadC(x, y int) {
 
 		// Print the last line
 		if y > 1 {
-			fmt.Print("C")
+			z01.PrintRune('C')
 			for i := 0; i < x-2; i++ {
 				z01.PrintRune('B')
 			}

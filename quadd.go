@@ -1,8 +1,6 @@
 package piscine
 
 import (
-	"fmt"
-
 	"github.com/01-edu/z01"
 )
 
@@ -28,7 +26,8 @@ func QuadD(x, y int) {
 				z01.PrintRune(' ')
 			}
 			if x > 1 {
-				fmt.Println("B")
+				z01.PrintRune('B')
+				z01.PrintRune('\n')
 			} else {
 				z01.PrintRune('\n')
 			}

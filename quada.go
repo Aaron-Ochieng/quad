@@ -1,8 +1,6 @@
 package piscine
 
 import (
-	"fmt"
-
 	"github.com/01-edu/z01"
 )
 
@@ -22,7 +20,7 @@ func QuadA(x, y int) {
 
 		// Print sides
 		for i := 0; i < y-2; i++ {
-			fmt.Print("|")
+			z01.PrintRune('|')
 			for j := 0; j < x-2; j++ {
 				z01.PrintRune(' ')
 			}
