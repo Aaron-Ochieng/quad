@@ -6,7 +6,7 @@ import (
 
 func QuadB(x, y int) {
 	if x > 0 && y > 0 {
-		// Top line
+		// TopLine
 		z01.PrintRune('/')
 		for i := 0; i < x-2; i++ {
 			z01.PrintRune('*')
