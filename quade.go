@@ -5,7 +5,6 @@ import (
 )
 
 func QuadE(x, y int) {
-	// Check if x and y are positive numbers
 	if x > 0 && y > 0 {
 		// Print the first line
 		z01.PrintRune('A')
