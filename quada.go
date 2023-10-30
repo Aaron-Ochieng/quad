@@ -6,7 +6,6 @@ import (
 
 func QuadA(x, y int) {
 	if x > 0 && y > 0 {
-		// Print top side
 		z01.PrintRune('o')
 		for i := 0; i < x-2; i++ {
 			z01.PrintRune('-')
