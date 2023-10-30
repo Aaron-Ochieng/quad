@@ -6,20 +6,20 @@ import (
 
 func QuadB(x, y int) {
 	if x > 0 && y > 0 {
-		// Print top side
+		// Top line
 		z01.PrintRune('/')
 		for i := 0; i < x-2; i++ {
 			z01.PrintRune('*')
 		}
 		if x > 1 {
-			// z01.PrintRune('\n')
 			z01.PrintRune('\\')
 			z01.PrintRune('\n')
 		} else {
 			z01.PrintRune('\n')
+
 		}
 
-		// Print sides
+		// Middle lines
 		for i := 0; i < y-2; i++ {
 			z01.PrintRune('*')
 			for j := 0; j < x-2; j++ {
@@ -27,23 +27,23 @@ func QuadB(x, y int) {
 			}
 			if x > 1 {
 				z01.PrintRune('*')
+				z01.PrintRune('\n')
 			} else {
 				z01.PrintRune('\n')
 			}
 		}
 
-		// Print bottom side
+		// Bottom line
 		if y > 1 {
-			z01.PrintRune('\n')
-			z01.PrintRune('\\')
-			// z01.PrintRune('\n')
-			for i := 0; i < x-2; i++ {
-				z01.PrintRune('*')
-			}
 			if x > 1 {
+				z01.PrintRune('\\')
+				for i := 0; i < x-2; i++ {
+					z01.PrintRune('*')
+				}
 				z01.PrintRune('/')
 				z01.PrintRune('\n')
 			} else {
+				z01.PrintRune('\\')
 				z01.PrintRune('\n')
 			}
 		}
