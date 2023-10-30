@@ -33,7 +33,7 @@ func QuadC(x, y int) {
 			}
 		}
 
-		// Print the last line
+		// Print last line
 		if y > 1 {
 			z01.PrintRune('C')
 			for i := 0; i < x-2; i++ {
