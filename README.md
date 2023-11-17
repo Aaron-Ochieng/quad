@@ -1,41 +1,440 @@
-# Readme - Explanation of the Quad Go Program
+Instructions
 
-The Go program `QuadE` is designed to generate a pattern of characters that resembles a rectangular shape. The dimensions of the rectangle are determined by the values of `x` and `y`. The program uses the `github.com/01-edu/z01` package to interact with the console and print characters.
+Write a function QuadA that prints a valid rectangle with a given width of x and height of y.
 
-## Function Description
+The function must draw the rectangles as in the examples.
 
-The `QuadE` function takes two integer parameters, `x` and `y`, representing the width and height of the rectangle. It then generates and prints a pattern based on these dimensions.
+If x and y are positive numbers, the program should print the rectangles as seen in the examples, otherwise, the function should print nothing.
 
-## How the Program Works
+Make sure you submit all the necessary files to run the program.
+Expected function
 
-1. The program checks if both `x` and `y` are greater than 0. If either of them is not greater than 0, it will not generate the pattern.
+func QuadA(x,y int) {
 
-2. The program prints the first line of the rectangle. It consists of the character 'A' repeated `x-2` times (if `x` is greater than 1), followed by 'C' if `x` is greater than 1. It ends with a newline character.
+}
 
-3. The program proceeds to print the middle lines. For each line in the middle (excluding the first and last lines), it starts with 'B', followed by `x-2` spaces (if `x` is greater than 1), and ends with 'B' (followed by a newline character if `x` is greater than 1).
+Usage
 
-4. After printing the middle lines `y-2` times, it moves on to the last line. If `y` is greater than 1, it prints 'C', followed by `x-2` 'B' characters (if `x` is greater than 1), and finally 'A' (followed by a newline character if `x` is greater than 1).
+Here are possible programs to test your function :
 
-5. The pattern is now complete, and the function terminates.
+Program #1
 
-## Example
+package main
 
-Here's an example of how the `QuadE` function works:
+import "piscine"
 
-```go
-QuadE(5, 4)
-```
+func main() {
+	piscine.QuadA(5,3)
+}
 
-Output:
-```
-ABC
-B B
-B B
-ABA
-```
+And its output :
 
-In this example, `x` is 5, and `y` is 4, so the program generates a 5x4 rectangular pattern with 'A', 'B', and 'C' characters as shown.
+$ go run .
+o---o
+|   |
+o---o
+$
 
-Please note that the `QuadE` function generates a rectangle only if both `x` and `y` are greater than 0. If either of them is not, it won't print anything.
+Program #2
 
-This readme provides an overview of the `QuadE` Go program and how it generates rectangular patterns based on input dimensions.
+package main
+
+import "piscine"
+
+func main() {
+	piscine.QuadA(5,1)
+}
+
+And its output :
+
+$ go run .
+o---o
+$
+
+Program #3
+
+package main
+
+import "piscine"
+
+func main() {
+	piscine.QuadA(1,1)
+}
+
+And its output :
+
+$ go run .
+o
+$
+
+Program #4
+
+package main
+
+import "piscine"
+
+func main() {
+	piscine.QuadA(1,5)
+}
+
+And its output :
+
+$ go run .
+o
+|
+|
+|
+o
+$
+
+quadB
+Instructions
+
+Write a function QuadB that prints a valid rectangle of width x and of height y.
+
+The function must draw the rectangles as in the examples.
+
+If x and y are positive numbers, the program should print the rectangles as seen in the examples, otherwise, the function should print nothing.
+Expected function
+
+func QuadB(x,y int) {
+
+}
+
+Usage
+
+Here are possible programs to test your function :
+
+Program #1
+
+package main
+
+import "piscine"
+
+func main() {
+	piscine.QuadB(5,3)
+}
+
+And its output :
+
+$ go run .
+/***\
+*   *
+\***/
+$
+
+Program #2
+
+package main
+
+import "piscine"
+
+func main() {
+	piscine.QuadB(5,1)
+}
+
+And its output :
+
+$ go run .
+/***\
+$
+
+Program #3
+
+package main
+
+import "piscine"
+
+func main() {
+	piscine.QuadB(1,1)
+}
+
+And its output :
+
+$ go run .
+/
+$
+
+Program #4
+
+package main
+
+import "piscine"
+
+func main() {
+	piscine.QuadB(1,5)
+}
+
+And its output :
+
+$ go run .
+/
+*
+*
+*
+\
+$
+
+quadC
+Instructions
+
+Write a function QuadC that prints a valid rectangle of width x and of height y.
+
+The function must draw the rectangles as in the examples.
+
+If x and y are positive numbers, the program should print the rectangles as seen in the examples, otherwise, the function should print nothing.
+Expected function
+
+func QuadC(x,y int) {
+
+}
+
+Usage
+
+Here are possible programs to test your function :
+
+Program #1
+
+package main
+
+import "piscine"
+
+func main() {
+	piscine.QuadC(5,3)
+}
+
+And its output :
+
+$ go run .
+ABBBA
+B   B
+CBBBC
+$
+
+Program #2
+
+package main
+
+import "piscine"
+
+func main() {
+	piscine.QuadC(5,1)
+}
+
+And its output :
+
+$ go run .
+ABBBA
+$
+
+Program #3
+
+package main
+
+import "piscine"
+
+func main() {
+	piscine.QuadC(1,1)
+}
+
+And its output :
+
+$ go run .
+A
+$
+
+Program #4
+
+package main
+
+import "piscine"
+
+func main() {
+	piscine.QuadC(1,5)
+}
+
+And its output :
+
+$ go run .
+A
+B
+B
+B
+C
+$
+
+quadD
+Instructions
+
+Write a function QuadD that prints a valid rectangle of width x and of height y.
+
+The function must draw the rectangles as in the examples.
+
+If x and y are positive numbers, the program should print the rectangles as seen in the examples, otherwise, the function should print nothing.
+Expected function
+
+func QuadD(x,y int) {
+
+}
+
+Usage
+
+Here are possible programs to test your function :
+
+Program #1
+
+package main
+
+import "piscine"
+
+func main() {
+	piscine.QuadD(5,3)
+}
+
+And its output :
+
+$ go run .
+ABBBC
+B   B
+ABBBC
+$
+
+Program #2
+
+package main
+
+import "piscine"
+
+func main() {
+	piscine.QuadD(5,1)
+}
+
+And its output :
+
+$ go run .
+ABBBC
+$
+
+Program #3
+
+package main
+
+import "piscine"
+
+func main() {
+	piscine.QuadD(1,1)
+}
+
+And its output :
+
+$ go run .
+A
+$
+
+Program #4
+
+package main
+
+import "piscine"
+
+func main() {
+	piscine.QuadD(1,5)
+}
+
+And its output :
+
+$ go run .
+A
+B
+B
+B
+A
+$
+
+quadE
+Instructions
+
+Write a function QuadE that prints a valid rectangle of width x and of height y.
+
+The function must draw the rectangles as in the examples.
+
+If x and y are positive numbers, the program should print the rectangles as seen in the examples, otherwise, the function should print nothing.
+Expected function
+
+func QuadE(x,y int) {
+
+}
+
+Usage
+
+Here are possible programs to test your function :
+
+Program #1
+
+package main
+
+import "piscine"
+
+func main() {
+	piscine.QuadE(5,3)
+}
+
+And its output :
+
+$ go run .
+ABBBC
+B   B
+CBBBA
+$
+
+Program #2
+
+package main
+
+import "piscine"
+
+func main() {
+	piscine.QuadE(5,1)
+}
+
+And its output :
+
+$ go run .
+ABBBC
+$
+
+Program #3
+
+package main
+
+import "piscine"
+
+func main() {
+	piscine.QuadE(1,1)
+}
+
+And its output :
+
+$ go run .
+A
+$
+
+Program #4
+
+package main
+
+import "piscine"
+
+func main() {
+	piscine.QuadE(1,5)
+}
+
+And its output :
+
+$ go run .
+A
+B
+B
+B
+C
+$
